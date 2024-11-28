@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="title-container">
+            <h1>Ma todo liste</h1>
+            <button class="toggleForm">Cacher</button>
+        </div>
+        <form class="todo-form">
+            <input type="text" id="task" placeholder="Nouvelle tâche..." required>
+            <input type="date" id="due-date" required>
+            <label class="reminder-label">
+                <input type="checkbox" id="reminder">
+                Rappel
+            </label>
+            <button type="submit">Créer</button>
+        </form>
+
+        <ul class="todo-list">
+            <!-- Les tâches seront ajoutées ici dynamiquement -->
+            
+        </ul>
+
+        <div class="todo-footer">
+            <button class="reminder-all">Par rappel</button>
+            <button class="clear-all hide">Tous supprimer</button>
+            <span class="counter"> <span id="count">0</span> Tâches restantes</span>
+        </div>
+    </div>
+
+    <script type="module" src="js/App.js"></script>
+</body>
+</html>
